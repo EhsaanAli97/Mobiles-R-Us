@@ -1,4 +1,6 @@
 import React from 'react';
+import { ButtonContainer } from '../Button';
+import { Link } from 'react-router-dom';
 
 const EmptyCart = () => {
 	return (
@@ -6,6 +8,10 @@ const EmptyCart = () => {
 			<div className="row">
 				<div className="col-10 mx-auto text-center text-title">
 					<h1>your cart is currently empty</h1>
+
+					<Link to="/">
+						<ButtonContainer className="mt-5">Back to store</ButtonContainer>
+					</Link>
 				</div>
 			</div>
 		</div>
